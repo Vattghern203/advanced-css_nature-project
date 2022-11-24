@@ -5,6 +5,8 @@ body {
     line-height: 1.7;
     color: $color-gray-dark;
     padding: 3rem;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 .heading-primary {

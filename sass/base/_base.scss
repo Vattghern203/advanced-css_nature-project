@@ -6,6 +6,10 @@
     box-sizing: inherit;
 }
 
+*::selection {
+    background-color: $color-primary;
+}
+
 html {
     /*10px in percentage, to adapt to any font-size that is used by the user*/
     font-size: 62.5%;

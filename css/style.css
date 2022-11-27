@@ -1,3 +1,23 @@
+/*
+
+0    - 600px:     Phone;
+
+600  - 900px:   Tablet Portrait;
+
+900  - 12000px: Tablet Landscape;
+
+1200 - 1800px: Normal Styling;
+
+1800px +:      Big Screen Desktop.
+
+*/
+/*
+    $breakpoint argument choices: 
+        - phone;
+        - tab-port;
+        - tab-land;
+        - big-desktop
+*/
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -49,6 +69,26 @@
 html {
   /*10px in percentage, to adapt to any font-size that is used by the user*/
   font-size: 62.5%;
+}
+@media (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
+@media (max-width: 56.25em) {
+  html {
+    font-size: 60%;
+  }
+}
+@media (max-width: 75em) {
+  html {
+    font-size: 70%;
+  }
+}
+@media (min-width: 112.5em) {
+  html {
+    font-size: 80%;
+  }
 }
 
 body {

@@ -34,7 +34,12 @@
         - phone;
         - tab-port;
         - tab-land;
-        - big-desktop
+        - big-desktop.
+
+    1em = 16px
+
+    Order: Base + typography > general layout > grid  > page layout > components.
+    
 */
 @mixin respond($breakpoint) {
     @if $breakpoint == phone {

@@ -82,4 +82,32 @@
             color: $color-primary;
         }
     }
+
+    @include respond(tab-port) {
+
+        &__content {
+            width: 70%;
+            height: auto;
+        }
+
+        &__left {
+            width: 100%;
+            padding-top: 1rem;
+        }
+
+        &__right {
+            display: table-header-group;
+            text-align: center;
+            margin-bottom: 1rem;
+        }
+
+        &__img {
+            width: 100%;
+        }
+
+        &__text {
+            column-gap: 2rem;
+            padding: 1rem;
+        }
+    }
 }

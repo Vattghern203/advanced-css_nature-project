@@ -734,6 +734,28 @@ body {
 .popup__close:hover {
   color: #7ed56f;
 }
+@media (max-width: 56.25em) {
+  .popup__content {
+    width: 70%;
+    height: auto;
+  }
+  .popup__left {
+    width: 100%;
+    padding-top: 1rem;
+  }
+  .popup__right {
+    display: table-header-group;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .popup__img {
+    width: 100%;
+  }
+  .popup__text {
+    column-gap: 2rem;
+    padding: 1rem;
+  }
+}
 
 .story {
   width: 75%;
@@ -1116,6 +1138,11 @@ body {
 @media (max-width: 56.25em) {
   .section-about {
     padding: 20rem 0;
+  }
+}
+@media (max-width: 37.5em) {
+  .section-about {
+    padding: 27rem 0;
   }
 }
 

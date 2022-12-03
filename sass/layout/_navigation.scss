@@ -76,7 +76,7 @@
     &__link {
         &:link,
         &:visited {
-            display: inline-block;
+            display: none;
             font-size: 3rem;
             font-weight: 300;
             padding: 1rem 2rem;
@@ -86,6 +86,7 @@
             background-image: linear-gradient(120deg, transparent 0%, transparent 50%, $color-white 50%);
             background-size: 230%;
             transition: all .4s ease;
+            pointer-events: none;
 
             span {
                 margin-right: 1.5rem;
@@ -110,6 +111,11 @@
     &__checkbox:checked ~ &__nav {
         opacity: 1;
         width: 100%;
+    }
+
+    &__checkbox:checked ~ &__nav &__list &__item &__link {
+        pointer-events: all;
+        display: inline-block;
     }
 
     // ICON

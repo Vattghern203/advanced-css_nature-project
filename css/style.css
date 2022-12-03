@@ -1068,7 +1068,7 @@ body {
   margin: 1rem;
 }
 .navigation__link:link, .navigation__link:visited {
-  display: inline-block;
+  display: none;
   font-size: 3rem;
   font-weight: 300;
   padding: 1rem 2rem;
@@ -1078,6 +1078,7 @@ body {
   background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
   background-size: 230%;
   transition: all 0.4s ease;
+  pointer-events: none;
 }
 .navigation__link:link span, .navigation__link:visited span {
   margin-right: 1.5rem;
@@ -1094,6 +1095,10 @@ body {
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
   width: 100%;
+}
+.navigation__checkbox:checked ~ .navigation__nav .navigation__list .navigation__item .navigation__link {
+  pointer-events: all;
+  display: inline-block;
 }
 .navigation__icon {
   position: relative;

@@ -994,6 +994,9 @@ body {
   text-align: center;
 }
 
+.navigation {
+  user-select: none;
+}
 .navigation__checkbox {
   display: none;
 }
@@ -1169,6 +1172,7 @@ body {
 @media (max-width: 56.25em) {
   .section-features {
     padding: 10rem 0;
+    background-image: linear-gradient(to right bottom, rgba(85, 197, 122, 0.8), rgba(40, 180, 133, 0.8)), url(../img/nat-4-small.jpg);
   }
 }
 

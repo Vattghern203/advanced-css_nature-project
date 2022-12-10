@@ -30,6 +30,11 @@
 
     @include respond(tab-port) {
         padding: 10rem 0;
+        background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.8),
+        rgba($color-primary-dark, 0.8)),
+        url(../img/nat-4-small.jpg);
     }
 }
 

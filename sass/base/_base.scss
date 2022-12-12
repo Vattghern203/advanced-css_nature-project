@@ -6,8 +6,9 @@
     box-sizing: inherit;
 }
 
-*::selection {
+::selection {
     background-color: $color-primary;
+    color: $color-white;
 }
 
 html {

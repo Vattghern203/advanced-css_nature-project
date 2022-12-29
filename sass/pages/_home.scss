@@ -7,6 +7,10 @@
         padding: 20rem 0;
     }
 
+    @include respond(tab-land) {
+        margin-top: -15vh;
+    }
+
     @include respond(phone) {
         padding: 27rem 0;
     }
